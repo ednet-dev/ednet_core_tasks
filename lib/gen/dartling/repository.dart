@@ -1,10 +1,10 @@
 part of dartling_tasks; 
  
-// lib/gen/dartling/repository.dart 
+// lib/gen/ednet_core/repository.dart 
  
 class DartlingRepo extends Repository { 
  
-  static final dartlingDomainCode = "Dartling"; 
+  static final dartlingDomainCode = "EDNetCore"; 
   static final dartlingTasksModelCode = "Tasks"; 
  
   DartlingRepo([String code="DartlingRepo"]) : super(code) { 

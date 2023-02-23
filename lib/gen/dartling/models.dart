@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/gen/dartling/models.dart 
+// lib/gen/ednet_core/models.dart 
  
 class DartlingModels extends DomainModels { 
  

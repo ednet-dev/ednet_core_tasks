@@ -1,5 +1,5 @@
  
-// test/dartling/tasks/dartling_tasks_gen.dart 
+// test/ednet_core/tasks/dartling_tasks_gen.dart 
  
 import "package:ednet_core/ednet_core.dart"; 
  
@@ -8,7 +8,7 @@ import "package:dartling_tasks/dartling_tasks.dart";
 genCode() { 
   var repo = new Repository(); 
  
-  var dartlingDomain = new Domain("Dartling"); 
+  var dartlingDomain = new Domain("EDNetCore"); 
  
   Model dartlingTasksModel = 
       fromJsonToModel(dartlingTasksModelJson, dartlingDomain, "Tasks"); 

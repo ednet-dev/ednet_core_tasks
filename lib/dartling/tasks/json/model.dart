@@ -3,7 +3,7 @@ part of dartling_tasks;
 // http://www.json.org/
 // http://jsonformatter.curiousconcept.com/
 
-// lib/dartling/tasks/json/model.dart
+// lib/ednet_core/tasks/json/model.dart
 
 var dartlingTasksModelJson = r'''
 {

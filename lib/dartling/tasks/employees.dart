@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/dartling/tasks/employees.dart 
+// lib/ednet_core/tasks/employees.dart 
  
 class Employee extends EmployeeGen { 
  

@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/gen/dartling/tasks/entries.dart 
+// lib/gen/ednet_core/tasks/entries.dart 
  
 class TasksEntries extends ModelEntries { 
  

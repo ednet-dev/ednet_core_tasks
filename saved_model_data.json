@@ -1,5 +1,5 @@
 {
-   "domain":"Dartling",
+   "domain":"EDNetCore",
    "model":"Tasks",
    "entries":[
       {
@@ -32,7 +32,7 @@
                "oid":"1385668912249",
                "code":null,
                "email":"mfgiguere@gmail.com",
-               "lastName":"Fournier-Giguère",
+               "lastName":"Fournier-Giguï¿½re",
                "firstName":"Maxim",
                "tasks":[
 

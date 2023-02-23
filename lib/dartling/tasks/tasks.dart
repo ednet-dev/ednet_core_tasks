@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/dartling/tasks/tasks.dart 
+// lib/ednet_core/tasks/tasks.dart 
  
 class Task extends TaskGen { 
  

@@ -1,10 +1,10 @@
 
-// web/dartling/tasks/dartling_tasks_web.dart
+// web/ednet_core/tasks/dartling_tasks_web.dart
 
 import "dart:html";
 
 import "package:ednet_core/ednet_core.dart";
-import "package:dartling_default_app/dartling_default_app.dart";
+import "package:ednet_core_default_app/ednet_core_default_app.dart";
 
 import "package:dartling_tasks/dartling_tasks.dart";
 

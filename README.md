@@ -6,7 +6,7 @@
 
 ## Description:
 dartling_tasks project uses
-[dartling] (https://github.com/dzenanr/dartling) for the model.
+[EDNetCore] (https://github.com/ednet-dev/ednet_core) for the model.
 This application shows how easy is to save and load a model to/from a local storage.
 
 The model is initialized with few entities in lib.dartling.tasks.init.dart.

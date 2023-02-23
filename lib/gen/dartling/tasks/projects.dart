@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/gen/dartling/tasks/projects.dart 
+// lib/gen/ednet_core/tasks/projects.dart 
  
 abstract class ProjectGen extends Entity<Project> { 
  

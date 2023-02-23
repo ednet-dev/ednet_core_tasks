@@ -1,6 +1,6 @@
                                                                                                     part of dartling_tasks;
 
-// lib/dartling/tasks/init.dart
+// lib/ednet_core/tasks/init.dart
 
 initDartlingTasks(TasksEntries entries) {
   _initEmployees(entries);

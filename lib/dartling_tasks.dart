@@ -7,7 +7,7 @@ http://opensource.org/licenses/
 http://en.wikipedia.org/wiki/BSD_license
 3-clause license ("New BSD License" or "Modified BSD License")
 
-Copyright (c) 2012, dartling project authors
+Copyright (c) 2023, ednet_core project authors
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -17,7 +17,7 @@ modification, are permitted provided that the following conditions are met:
     * Redistributions in binary form must reproduce the above copyright
       notice, this list of conditions and the following disclaimer in the
       documentation and/or other materials provided with the distribution.
-    * Neither the name of the dartling nor the
+    * Neither the name of the ednet_core nor the
       names of its contributors may be used to endorse or promote products
       derived from this software without specific prior written permission.
 
@@ -38,20 +38,20 @@ library dartling_tasks;
 
 import "package:ednet_core/ednet_core.dart";
 
-part "dartling/tasks/json/data.dart";
-part "dartling/tasks/json/model.dart";
+part "ednet_core/tasks/json/data.dart";
+part "ednet_core/tasks/json/model.dart";
 
-part "dartling/tasks/init.dart";
+part "ednet_core/tasks/init.dart";
 
-part "dartling/tasks/employees.dart";
-part "dartling/tasks/projects.dart";
-part "dartling/tasks/tasks.dart";
+part "ednet_core/tasks/employees.dart";
+part "ednet_core/tasks/projects.dart";
+part "ednet_core/tasks/tasks.dart";
 
-part "gen/dartling/tasks/entries.dart";
-part "gen/dartling/tasks/employees.dart";
-part "gen/dartling/tasks/projects.dart";
-part "gen/dartling/tasks/tasks.dart";
+part "gen/ednet_core/tasks/entries.dart";
+part "gen/ednet_core/tasks/employees.dart";
+part "gen/ednet_core/tasks/projects.dart";
+part "gen/ednet_core/tasks/tasks.dart";
 
-part "gen/dartling/models.dart";
-part "gen/dartling/repository.dart";
+part "gen/ednet_core/models.dart";
+part "gen/ednet_core/repository.dart";
 

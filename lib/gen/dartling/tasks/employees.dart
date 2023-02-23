@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/gen/dartling/tasks/employees.dart 
+// lib/gen/ednet_core/tasks/employees.dart 
  
 abstract class EmployeeGen extends Entity<Employee> { 
  

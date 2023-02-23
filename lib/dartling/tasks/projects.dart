@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/dartling/tasks/projects.dart 
+// lib/ednet_core/tasks/projects.dart 
  
 class Project extends ProjectGen { 
  
