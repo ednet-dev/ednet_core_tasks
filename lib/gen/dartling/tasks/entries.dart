@@ -32,7 +32,7 @@ class TasksEntries extends ModelEntries {
     } 
   } 
  
-  ConceptEntity newEntity(String conceptCode) { 
+  Entity newEntity(String conceptCode) { 
     var concept = model.concepts.singleWhereCode(conceptCode); 
     if (concept == null) { 
       throw new ConceptError("${conceptCode} concept does not exist.") ; 

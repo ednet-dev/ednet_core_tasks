@@ -2,7 +2,7 @@ part of dartling_tasks;
  
 // lib/gen/dartling/tasks/employees.dart 
  
-abstract class EmployeeGen extends ConceptEntity<Employee> { 
+abstract class EmployeeGen extends Entity<Employee> { 
  
   EmployeeGen(Concept concept) { 
     this.concept = concept;
