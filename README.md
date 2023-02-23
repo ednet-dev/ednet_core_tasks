@@ -1,6 +1,6 @@
 # dartling_tasks
 
-**Categories**: dartling, class models, many-to-many relationship, local storage.
+**Categories**: EDNetCore, class models, many-to-many relationship, local storage.
 
 **Concepts**: Project, Employee, Task.
 
@@ -9,9 +9,9 @@ dartling_tasks project uses
 [EDNetCore] (https://github.com/ednet-dev/ednet_core) for the model.
 This application shows how easy is to save and load a model to/from a local storage.
 
-The model is initialized with few entities in lib.dartling.tasks.init.dart.
+The model is initialized with few entities in lib.EDNetCore.tasks.init.dart.
 
-In web.dartling.tasks.dartling_tasks_web.dart:
+In web.EDNetCore.tasks.dartling_tasks_web.dart:
 
     String loadDartlingData(String name) {
       return window.localStorage[name];
@@ -21,19 +21,19 @@ In web.dartling.tasks.dartling_tasks_web.dart:
       window.localStorage[name] = json;
     }
 
-    showDartlingData(DartlingRepo dartlingRepo) {
+    showDartlingData(DartlingRepo ednetCoreRepository) {
       var mainView = new View(document, "main");
-      mainView.repo = dartlingRepo;
+      mainView.repo = ednetCoreRepository;
       new RepoMainSection(mainView);
     }
 
     void main() {
       var name = 'dartling_tasks_data';
-      var dartlingRepo = new DartlingRepo();
-      DartlingModels dartlingModels =
-          dartlingRepo.getDomainModels(DartlingRepo.dartlingDomainCode);
+      var ednetCoreRepository = new DartlingRepo();
+      DartlingModels ednetCoreModels =
+          ednetCoreRepository.getDomainModels(DartlingRepo.ednetCoreDomainCode);
       TasksEntries dartlingTasksEntries =
-          dartlingModels.getModelEntries(DartlingRepo.dartlingTasksModelCode);
+          ednetCoreModels.getModelEntries(DartlingRepo.dartlingTasksModelCode);
       String json = loadDartlingData(name);
       if (json == null) {
         initDartlingTasks(dartlingTasksEntries);
@@ -42,10 +42,10 @@ In web.dartling.tasks.dartling_tasks_web.dart:
       } else {
         dartlingTasksEntries.fromJson(json);
       }
-      showDartlingData(dartlingRepo);
+      showDartlingData(ednetCoreRepository);
     }
 
-Run the default web app (web.dartling.tasks.dartling_tasks_web.html) to see live data.
+Run the default web app (web.EDNetCore.tasks.dartling_tasks_web.html) to see live data.
 The first time you use it, the model is initialized and saved locally.
 The next time the model is loaded from the local storage.
 

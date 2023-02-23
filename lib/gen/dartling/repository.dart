@@ -4,7 +4,7 @@ part of dartling_tasks;
  
 class DartlingRepo extends Repository { 
  
-  static final dartlingDomainCode = "EDNetCore"; 
+  static final ednetCoreDomainCode = "EDNetCore"; 
   static final dartlingTasksModelCode = "Tasks"; 
  
   DartlingRepo([String code="DartlingRepo"]) : super(code) { 
@@ -12,9 +12,9 @@ class DartlingRepo extends Repository {
   } 
  
   _initDartlingDomain() { 
-    var dartlingDomain = new Domain(dartlingDomainCode); 
-    domains.add(dartlingDomain); 
-    add(new DartlingModels(dartlingDomain)); 
+    var ednetCoreDomain = new Domain(ednetCoreDomainCode); 
+    domains.add(ednetCoreDomain); 
+    add(new DartlingModels(ednetCoreDomain)); 
   } 
  
 } 

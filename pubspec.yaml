@@ -1,11 +1,11 @@
 name: dartling_tasks
 version: 2.0.1
 author: Dzenan Ridjanovic
-description: dartling_tasks application that uses dartling for its model with a many-to-many relationship.
+description: dartling_tasks application that uses EDNetCore for its model with a many-to-many relationship.
 homepage: http://ondart.me/
 environment:
   sdk: '>=1.9.3 <2.0.0'
 dependencies:
   browser: any
-  dartling: any
+  ednet_core: any
   ednet_core_default_app: any

@@ -8,22 +8,22 @@ import "package:dartling_tasks/dartling_tasks.dart";
 genCode() { 
   var repo = new Repository(); 
  
-  var dartlingDomain = new Domain("EDNetCore"); 
+  var ednetCoreDomain = new Domain("EDNetCore"); 
  
   Model dartlingTasksModel = 
-      fromJsonToModel(dartlingTasksModelJson, dartlingDomain, "Tasks"); 
+      fromJsonToModel(dartlingTasksModelJson, ednetCoreDomain, "Tasks"); 
  
-  repo.domains.add(dartlingDomain); 
+  repo.domains.add(ednetCoreDomain); 
  
   repo.gen("dartling_tasks"); 
 } 
  
-initDartlingData(DartlingRepo dartlingRepo) { 
-   var dartlingModels = 
-       dartlingRepo.getDomainModels(DartlingRepo.dartlingDomainCode); 
+initDartlingData(DartlingRepo ednetCoreRepository) { 
+   var ednetCoreModels = 
+       ednetCoreRepository.getDomainModels(DartlingRepo.ednetCoreDomainCode); 
  
    var dartlingTasksEntries = 
-       dartlingModels.getModelEntries(DartlingRepo.dartlingTasksModelCode); 
+       ednetCoreModels.getModelEntries(DartlingRepo.dartlingTasksModelCode); 
    initDartlingTasks(dartlingTasksEntries); 
    dartlingTasksEntries.display(); 
    dartlingTasksEntries.displayJson(); 
@@ -32,7 +32,7 @@ initDartlingData(DartlingRepo dartlingRepo) {
 void main() { 
   genCode(); 
  
-  var dartlingRepo = new DartlingRepo(); 
-  initDartlingData(dartlingRepo); 
+  var ednetCoreRepository = new DartlingRepo(); 
+  initDartlingData(ednetCoreRepository); 
 } 
  

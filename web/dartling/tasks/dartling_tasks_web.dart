@@ -16,19 +16,19 @@ void saveDartlingData(String name, String json) {
   window.localStorage[name] = json;
 }
 
-showDartlingData(DartlingRepo dartlingRepo) {
+showDartlingData(DartlingRepo ednetCoreRepository) {
    var mainView = new View(document, "main");
-   mainView.repo = dartlingRepo;
+   mainView.repo = ednetCoreRepository;
    new RepoMainSection(mainView);
 }
 
 void main() {
   var name = 'dartling_tasks_data';
-  var dartlingRepo = new DartlingRepo();
-  DartlingModels dartlingModels =
-      dartlingRepo.getDomainModels(DartlingRepo.dartlingDomainCode);
+  var ednetCoreRepository = new DartlingRepo();
+  DartlingModels ednetCoreModels =
+      ednetCoreRepository.getDomainModels(DartlingRepo.ednetCoreDomainCode);
   TasksEntries dartlingTasksEntries =
-      dartlingModels.getModelEntries(DartlingRepo.dartlingTasksModelCode);
+      ednetCoreModels.getModelEntries(DartlingRepo.dartlingTasksModelCode);
   String json = loadDartlingData(name);
   print(json);
   if (json == null) {
@@ -39,6 +39,6 @@ void main() {
   } else {
     dartlingTasksEntries.fromJson(json);
   }
-  showDartlingData(dartlingRepo);
+  showDartlingData(ednetCoreRepository);
 }
 

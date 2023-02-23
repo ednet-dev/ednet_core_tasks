@@ -11,7 +11,7 @@ is represented with the oid of the parent entity (similar to a relational foreig
 which is called reference oid. This reference oid is used in the loading process
 to recreate an external relationship into a regular relationship.
 
-To understand this better, you can always use dartling as a relational model.
+To understand this better, you can always use EDNetCore as a relational model.
 In that case, all concepts are entry and all relationships are external.
 In a relational model a foreign key is used to express an external relationship
 and a join based on the primary key of the parent table and the foreign key of
@@ -36,7 +36,7 @@ directions. In this alternative, data may show up several times in the json
 document of the model's data. In addition, there is no need for a distinction
 between internal and external relationships. By default, all relationships are
 internal. This alternative is used in the toJson and fromJson methods of the
-ModelEntries class that implements ModelEntriesApi in dartling.
+ModelEntries class that implements ModelEntriesApi in EDNetCore.
 
 abstract class ModelEntriesApi {
   Model get model;

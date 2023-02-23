@@ -30,13 +30,13 @@ testDartlingTasks(Repository repo, String domainCode, String modelCode) {
   }); 
 } 
  
-testDartlingData(DartlingRepo dartlingRepo) { 
-  testDartlingTasks(dartlingRepo, DartlingRepo.dartlingDomainCode, 
+testDartlingData(DartlingRepo ednetCoreRepository) { 
+  testDartlingTasks(ednetCoreRepository, DartlingRepo.ednetCoreDomainCode, 
       DartlingRepo.dartlingTasksModelCode); 
 } 
  
 void main() { 
-  var dartlingRepo = new DartlingRepo(); 
-  testDartlingData(dartlingRepo); 
+  var ednetCoreRepository = new DartlingRepo(); 
+  testDartlingData(ednetCoreRepository); 
 } 
  
