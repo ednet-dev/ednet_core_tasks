@@ -1,7 +1,7 @@
  
 // test/dartling/tasks/dartling_tasks_gen.dart 
  
-import "package:dartling/dartling.dart"; 
+import "package:ednet_core/ednet_core.dart"; 
  
 import "package:dartling_tasks/dartling_tasks.dart"; 
  

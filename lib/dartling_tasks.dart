@@ -36,7 +36,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 library dartling_tasks;
 
-import "package:dartling/dartling.dart";
+import "package:ednet_core/ednet_core.dart";
 
 part "dartling/tasks/json/data.dart";
 part "dartling/tasks/json/model.dart";
