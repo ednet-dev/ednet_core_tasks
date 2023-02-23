@@ -6,7 +6,7 @@ import "package:ednet_core/ednet_core.dart";
 import "package:dartling_tasks/dartling_tasks.dart"; 
  
 genCode() { 
-  var repo = new Repo(); 
+  var repo = new Repository(); 
  
   var dartlingDomain = new Domain("Dartling"); 
  

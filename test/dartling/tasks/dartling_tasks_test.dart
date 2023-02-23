@@ -7,7 +7,7 @@ import "package:ednet_core/ednet_core.dart";
  
 import "package:dartling_tasks/dartling_tasks.dart"; 
  
-testDartlingTasks(Repo repo, String domainCode, String modelCode) { 
+testDartlingTasks(Repository repo, String domainCode, String modelCode) { 
   var models; 
   var session; 
   var entries; 

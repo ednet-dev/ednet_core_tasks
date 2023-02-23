@@ -2,7 +2,7 @@ part of dartling_tasks;
  
 // lib/gen/dartling/repository.dart 
  
-class DartlingRepo extends Repo { 
+class DartlingRepo extends Repository { 
  
   static final dartlingDomainCode = "Dartling"; 
   static final dartlingTasksModelCode = "Tasks"; 
