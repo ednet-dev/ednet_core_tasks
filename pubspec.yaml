@@ -2,6 +2,7 @@ name: ednet_core_tasks
 version: 0.0.1
 
 description: ednet_core_tasks application that uses EDNetCore for its model with a many-to-many relationship.
+
 homepage: https://ednet.dev
 
 environment:
