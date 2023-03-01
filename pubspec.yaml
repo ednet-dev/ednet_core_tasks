@@ -1,11 +1,14 @@
 name: ednet_core_tasks
-version: 2.0.1
-author: Dzenan Ridjanovic
+version: 0.0.1
+
 description: ednet_core_tasks application that uses EDNetCore for its model with a many-to-many relationship.
-homepage: http://ondart.me/
+homepage: https://ednet.dev
+
 environment:
-  sdk: '>=1.9.3 <2.0.0'
+  sdk: '>=2.18.6 <3.0.0'
+
 dependencies:
-  browser: any
-  ednet_core: any
-  ednet_core_default_app: any
+  ednet_core:
+    path: ../../../ednet_cms/packages/ednet_core
+  ednet_core_default_app:
+    path: ../ednet_core_default_app
