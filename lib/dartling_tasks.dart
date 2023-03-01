@@ -47,7 +47,7 @@ part "ednet_core/tasks/employees.dart";
 part "ednet_core/tasks/projects.dart";
 part "ednet_core/tasks/tasks.dart";
 
-part "gen/ednet_core/tasks/entries.dart";
+part "gen/ednet_core/tasks/model_entries.dart";
 part "gen/ednet_core/tasks/employees.dart";
 part "gen/ednet_core/tasks/projects.dart";
 part "gen/ednet_core/tasks/tasks.dart";

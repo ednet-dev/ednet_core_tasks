@@ -1,6 +1,6 @@
 part of dartling_tasks; 
  
-// lib/gen/ednet_core/tasks/entries.dart 
+// lib/gen/ednet_core/tasks/model_entries.dart
  
 class TasksEntries extends ModelEntries { 
  
@@ -16,7 +16,7 @@ class TasksEntries extends ModelEntries {
     return entries; 
   } 
  
-  Entities newEntities(String conceptCode) { 
+  Entities? newEntities(String conceptCode) { 
     var concept = model.concepts.singleWhereCode(conceptCode); 
     if (concept == null) { 
       throw new ConceptError("${conceptCode} concept does not exist.") ; 
@@ -32,7 +32,7 @@ class TasksEntries extends ModelEntries {
     } 
   } 
  
-  Entity newEntity(String conceptCode) { 
+  Entity? newEntity(String conceptCode) { 
     var concept = model.concepts.singleWhereCode(conceptCode); 
     if (concept == null) { 
       throw new ConceptError("${conceptCode} concept does not exist.") ; 
