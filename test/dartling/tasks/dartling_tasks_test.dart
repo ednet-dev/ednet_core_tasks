@@ -1,13 +1,13 @@
  
-// test/ednet_core/tasks/dartling_tasks_test.dart 
+// test/ednet_core/tasks/ednet_core_tasks_test.dart 
  
 import "package:test/test.dart"; 
  
 import "package:ednet_core/ednet_core.dart"; 
  
-import "package:dartling_tasks/dartling_tasks.dart"; 
+import "package:ednet_core_tasks/ednet_core_tasks.dart"; 
  
-testDartlingTasks(Repository repo, String domainCode, String modelCode) { 
+testEDNetCoreTasks(Repository repo, String domainCode, String modelCode) { 
   var models; 
   var session; 
   var entries; 
@@ -30,13 +30,13 @@ testDartlingTasks(Repository repo, String domainCode, String modelCode) {
   }); 
 } 
  
-testDartlingData(DartlingRepo ednetCoreRepository) { 
-  testDartlingTasks(ednetCoreRepository, DartlingRepo.ednetCoreDomainCode, 
-      DartlingRepo.dartlingTasksModelCode); 
+testEDNetCoreData(EDNetCoreRepo ednetCoreRepository) { 
+  testEDNetCoreTasks(ednetCoreRepository, EDNetCoreRepo.ednetCoreDomainCode, 
+      EDNetCoreRepo.ednetCoreTasksModelCode); 
 } 
  
 void main() { 
-  var ednetCoreRepository = new DartlingRepo(); 
-  testDartlingData(ednetCoreRepository); 
+  var ednetCoreRepository = new EDNetCoreRepo(); 
+  testEDNetCoreData(ednetCoreRepository); 
 } 
  

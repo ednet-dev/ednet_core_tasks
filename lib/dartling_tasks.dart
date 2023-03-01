@@ -1,5 +1,5 @@
 
-// lib/dartling_tasks.dart
+// lib/ednet_core_tasks.dart
 
 /*
 http://opensource.org/licenses/
@@ -34,7 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 
-library dartling_tasks;
+library ednet_core_tasks;
 
 import "package:ednet_core/ednet_core.dart";
 
@@ -52,6 +52,6 @@ part "gen/ednet_core/tasks/employees.dart";
 part "gen/ednet_core/tasks/projects.dart";
 part "gen/ednet_core/tasks/tasks.dart";
 
-part "gen/ednet_core/models.dart";
+part "gen/ednet_core/i_domain_models.dart";
 part "gen/ednet_core/repository.dart";
 

@@ -3,7 +3,7 @@ Internal versus External Relationships
 A concept with more than one parent (such as Task) must have only one
 internal relationship (Project -< Task).
 Other relationships of the concept are external
-(flagged as such in [Model Concepts](https://github.com/dzenanr/model_concepts)).
+(flagged as such in [Model Concepts](https://github.com/ednet-dev/model_concepts)).
 External relationships are pertinent only for data persistency.
 Once data are loaded into main memory, all relationships are just relationships
 that can be used in both directions. An external relationship in a json document

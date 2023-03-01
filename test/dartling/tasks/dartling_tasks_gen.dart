@@ -1,38 +1,38 @@
  
-// test/ednet_core/tasks/dartling_tasks_gen.dart 
+// test/ednet_core/tasks/ednet_core_tasks_gen.dart 
  
 import "package:ednet_core/ednet_core.dart"; 
  
-import "package:dartling_tasks/dartling_tasks.dart"; 
+import "package:ednet_core_tasks/ednet_core_tasks.dart"; 
  
 genCode() { 
   var repo = new Repository(); 
  
   var ednetCoreDomain = new Domain("EDNetCore"); 
  
-  Model dartlingTasksModel = 
-      fromJsonToModel(dartlingTasksModelJson, ednetCoreDomain, "Tasks"); 
+  Model ednetCoreTasksModel = 
+      fromJsonToModel(ednetCoreTasksModelJson, ednetCoreDomain, "Tasks"); 
  
   repo.domains.add(ednetCoreDomain); 
  
-  repo.gen("dartling_tasks"); 
+  repo.gen("ednet_core_tasks"); 
 } 
  
-initDartlingData(DartlingRepo ednetCoreRepository) { 
+initEDNetCoreData(EDNetCoreRepo ednetCoreRepository) { 
    var ednetCoreModels = 
-       ednetCoreRepository.getDomainModels(DartlingRepo.ednetCoreDomainCode); 
+       ednetCoreRepository.getDomainModels(EDNetCoreRepo.ednetCoreDomainCode); 
  
-   var dartlingTasksEntries = 
-       ednetCoreModels.getModelEntries(DartlingRepo.dartlingTasksModelCode); 
-   initDartlingTasks(dartlingTasksEntries); 
-   dartlingTasksEntries.display(); 
-   dartlingTasksEntries.displayJson(); 
+   var ednetCoreTasksEntries = 
+       ednetCoreModels.getModelEntries(EDNetCoreRepo.ednetCoreTasksModelCode); 
+   initEDNetCoreTasks(ednetCoreTasksEntries); 
+   ednetCoreTasksEntries.display(); 
+   ednetCoreTasksEntries.displayJson(); 
 } 
  
 void main() { 
   genCode(); 
  
-  var ednetCoreRepository = new DartlingRepo(); 
-  initDartlingData(ednetCoreRepository); 
+  var ednetCoreRepository = new EDNetCoreRepo(); 
+  initEDNetCoreData(ednetCoreRepository); 
 } 
  

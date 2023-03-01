@@ -1,5 +1,5 @@
  
-// lib/dartling_tasks_app.dart 
+// lib/ednet_core_tasks_app.dart 
  
 /*
 http://opensource.org/licenses/
@@ -34,7 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
  
  
-library dartling_tasks_app; 
+library ednet_core_tasks_app; 
  
 import "dart:html"; 
 import "dart:math"; 
@@ -42,5 +42,5 @@ import "dart:math";
 import "package:ednet_core/ednet_core.dart"; 
 import "package:ednet_core_default_app/ednet_core_default_app.dart"; 
  
-import "package:dartling_tasks/dartling_tasks.dart"; 
+import "package:ednet_core_tasks/ednet_core_tasks.dart"; 
  

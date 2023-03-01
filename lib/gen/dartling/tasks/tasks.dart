@@ -1,4 +1,4 @@
-part of dartling_tasks; 
+part of ednet_core_tasks; 
  
 // lib/gen/ednet_core/tasks/tasks.dart 
  

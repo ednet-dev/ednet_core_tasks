@@ -1,20 +1,20 @@
-part of dartling_tasks; 
+part of ednet_core_tasks; 
  
 // lib/gen/ednet_core/repository.dart 
  
-class DartlingRepo extends Repository { 
+class EDNetCoreRepo extends CoreRepository { 
  
   static final ednetCoreDomainCode = "EDNetCore"; 
-  static final dartlingTasksModelCode = "Tasks"; 
+  static final ednetCoreTasksModelCode = "Tasks"; 
  
-  DartlingRepo([String code="DartlingRepo"]) : super(code) { 
-    _initDartlingDomain(); 
+  EDNetCoreRepo([String code="EDNetCoreRepo"]) : super(code) { 
+    _initEDNetCoreDomain(); 
   } 
  
-  _initDartlingDomain() { 
+  _initEDNetCoreDomain() { 
     var ednetCoreDomain = new Domain(ednetCoreDomainCode); 
     domains.add(ednetCoreDomain); 
-    add(new DartlingModels(ednetCoreDomain)); 
+    add(new EDNetCoreModels(ednetCoreDomain)); 
   } 
  
 } 

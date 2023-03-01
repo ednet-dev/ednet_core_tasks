@@ -1,5 +1,5 @@
 Links
 
-https://github.com/dzenanr/dartling_tasks
+https://github.com/ednet-dev/ednet_core_tasks
 http://jsonformatter.curiousconcept.com/
 http://daringfireball.net/projects/markdown/basics

@@ -1,8 +1,8 @@
-                                                                                                    part of dartling_tasks;
+                                                                                                    part of ednet_core_tasks;
 
 // lib/ednet_core/tasks/init.dart
 
-initDartlingTasks(TasksEntries entries) {
+initEDNetCoreTasks(TasksEntries entries) {
   _initEmployees(entries);
   _initProjects(entries);
   _initTasks(entries);
@@ -12,7 +12,7 @@ initDartlingTasks(TasksEntries entries) {
 
 _initEmployees(TasksEntries entries) {
   Employee employee = new Employee(entries.employees.concept);
-  employee.email = "dzenanr@gmail.com";
+  employee.email = "user@ednet.one";
   employee.lastName = "Ridjanovic";
   employee.firstName = "Dzenan";
   entries.employees.add(employee);
@@ -65,7 +65,7 @@ _initTasks(TasksEntries entries) {
   Project project = projects.singleWhereAttributeId('name', 'On Dart Education');
   assert(project != null);
 
-  Employee employee = employees.singleWhereAttributeId('email', 'dzenanr@gmail.com');
+  Employee employee = employees.singleWhereAttributeId('email', 'user@ednet.one');
   assert(employee != null);
 
   Task task = new Task.withId(project.tasks.concept, project, employee);
@@ -97,7 +97,7 @@ _initTasks(TasksEntries entries) {
   project.tasks.add(task);
   employee.tasks.add(task);
 
-  employee = employees.singleWhereAttributeId('email', 'dzenanr@gmail.com');
+  employee = employees.singleWhereAttributeId('email', 'user@ednet.one');
   assert(employee != null);
 
   task = new Task.withId(project.tasks.concept, project, employee);

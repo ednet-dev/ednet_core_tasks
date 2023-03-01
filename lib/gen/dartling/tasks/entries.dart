@@ -1,4 +1,4 @@
-part of dartling_tasks; 
+part of ednet_core_tasks; 
  
 // lib/gen/ednet_core/tasks/model_entries.dart
  
@@ -49,7 +49,7 @@ class TasksEntries extends ModelEntries {
   } 
  
   fromJsonToData() { 
-    fromJson(dartlingTasksDataJson); 
+    fromJson(ednetCoreTasksDataJson); 
   } 
  
   Employees get employees => getEntry("Employee"); 

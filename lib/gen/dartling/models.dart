@@ -1,18 +1,18 @@
-part of dartling_tasks; 
+part of ednet_core_tasks; 
  
-// lib/gen/ednet_core/models.dart 
+// lib/gen/ednet_core/i_domain_models.dart
  
-class DartlingModels extends DomainModels { 
+class EDNetCoreModels extends DomainModels { 
  
-  DartlingModels(Domain domain) : super(domain) { 
+  EDNetCoreModels(Domain domain) : super(domain) { 
     add(fromJsonToTasksEntries()); 
   } 
  
   TasksEntries fromJsonToTasksEntries() { 
     return new TasksEntries(fromJsonToModel( 
-      dartlingTasksModelJson, 
+      ednetCoreTasksModelJson, 
       domain, 
-      DartlingRepo.dartlingTasksModelCode)); 
+      EDNetCoreRepo.ednetCoreTasksModelCode)); 
   } 
  
 } 
