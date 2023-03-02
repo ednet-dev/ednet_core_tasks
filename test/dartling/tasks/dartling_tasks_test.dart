@@ -7,7 +7,7 @@ import "package:ednet_core/ednet_core.dart";
  
 import "package:ednet_core_tasks/ednet_core_tasks.dart"; 
  
-testEDNetCoreTasks(Repository repo, String domainCode, String modelCode) { 
+testEDNetCoreTasks(CoreRepository repo, String domainCode, String modelCode) {
   var models; 
   var session; 
   var entries; 

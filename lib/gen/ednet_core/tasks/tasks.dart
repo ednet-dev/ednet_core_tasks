@@ -14,10 +14,10 @@ abstract class TaskGen extends Entity<Task> {
     setParent("employee", employee); 
   } 
  
-  Project get project => getParent("project"); 
+  Project get project => getParent("project") as Project;
   set project(Project p) => setParent("project", p); 
   
-  Employee get employee => getParent("employee"); 
+  Employee get employee => getParent("employee") as Employee;
   set employee(Employee p) => setParent("employee", p); 
   
   String get description => getAttribute("description"); 
