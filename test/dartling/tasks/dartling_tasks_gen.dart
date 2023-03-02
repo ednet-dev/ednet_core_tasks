@@ -6,7 +6,7 @@ import "package:ednet_core/ednet_core.dart";
 import "package:ednet_core_tasks/ednet_core_tasks.dart"; 
  
 genCode() { 
-  var repo = new Repository(); 
+  var repo = CoreRepository(); 
  
   var ednetCoreDomain = new Domain("EDNetCore"); 
  
@@ -23,8 +23,8 @@ initEDNetCoreData(EDNetCoreRepo ednetCoreRepository) {
        ednetCoreRepository.getDomainModels(EDNetCoreRepo.ednetCoreDomainCode); 
  
    var ednetCoreTasksEntries = 
-       ednetCoreModels.getModelEntries(EDNetCoreRepo.ednetCoreTasksModelCode); 
-   initEDNetCoreTasks(ednetCoreTasksEntries); 
+       ednetCoreModels?.getModelEntries(EDNetCoreRepo.ednetCoreTasksModelCode);
+   initEDNetCoreTasks(ednetCoreTasksEntries as TasksEntries);
    ednetCoreTasksEntries.display(); 
    ednetCoreTasksEntries.displayJson(); 
 } 
