@@ -9,9 +9,9 @@ ednet_core_tasks project uses
 [EDNetCore](https://github.com/ednet-dev/ednet_core) for the model.
 This application shows how easy is to save and load a model to/from a local storage.
 
-The model is initialized with few entities in lib.EDNetCore.tasks.init.dart.
+The model is initialized with few entities in lib.ednet_core.tasks.init.dart.
 
-In web.EDNetCore.tasks.ednet_core_tasks_web.dart:
+In web.ednet_core.tasks.ednet_core_tasks_web.dart:
 
     String loadEDNetCoreData(String name) {
       return window.localStorage[name];
@@ -45,7 +45,7 @@ In web.EDNetCore.tasks.ednet_core_tasks_web.dart:
       showEDNetCoreData(ednetCoreRepository);
     }
 
-Run the default web app (web.EDNetCore.tasks.ednet_core_tasks_web.html) to see live data.
+Run the default web app (web.ednet_core.tasks.ednet_core_tasks_web.html) to see live data.
 The first time you use it, the model is initialized and saved locally.
 The next time the model is loaded from the local storage.
 
