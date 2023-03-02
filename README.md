@@ -6,7 +6,7 @@
 
 ## Description:
 ednet_core_tasks project uses
-[EDNetCore] (https://github.com/ednet-dev/ednet_core) for the model.
+[EDNetCore](https://github.com/ednet-dev/ednet_core) for the model.
 This application shows how easy is to save and load a model to/from a local storage.
 
 The model is initialized with few entities in lib.EDNetCore.tasks.init.dart.
