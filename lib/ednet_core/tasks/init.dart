@@ -62,10 +62,10 @@ _initTasks(TasksEntries entries) {
   Employees employees = entries.employees;
   Projects projects = entries.projects;
 
-  Project project = projects.singleWhereAttributeId('name', 'On Dart Education');
+  Project? project = projects.singleWhereAttributeId('name', 'On Dart Education');
   assert(project != null);
 
-  Employee employee = employees.singleWhereAttributeId('email', 'user@ednet.one');
+  Employee? employee = employees.singleWhereAttributeId('email', 'user@ednet.one');
   assert(employee != null);
 
   Task task = new Task.withId(project.tasks.concept, project, employee);
