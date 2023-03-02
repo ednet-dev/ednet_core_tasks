@@ -6,8 +6,8 @@ abstract class EmployeeGen extends Entity<Employee> {
  
   EmployeeGen(Concept concept) { 
     this.concept = concept;
-    Concept taskConcept = concept.model.concepts.singleWhereCode("Task"); 
-    setChild("tasks", new Tasks(taskConcept)); 
+    Concept? taskConcept = concept.model.concepts.singleWhereCode("Task");
+    setChild("tasks", Tasks(taskConcept!));
   } 
  
   EmployeeGen.withId(Concept concept, String email) { 

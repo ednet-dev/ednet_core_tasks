@@ -1,5 +1,5 @@
-C:\Users\ridjanod.FSA-RIDJANOD-2\dart\db\ednet_core_tasks\model.json
+ednet_core_tasks\model.json
 
---genall C:\Users\ridjanod.FSA-RIDJANOD-2\dart\db\ednet_core_tasks EDNetCore tasks
+--genall ednet_core_tasks EDNetCore tasks
 
---gengen C:\Users\ridjanod.FSA-RIDJANOD-2\dart\db\ednet_core_tasks EDNetCore tasks
+--gengen ednet_core_tasks EDNetCore tasks

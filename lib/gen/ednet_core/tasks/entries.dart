@@ -52,8 +52,8 @@ class TasksEntries extends ModelEntries {
     fromJson(ednetCoreTasksDataJson); 
   } 
  
-  Employees get employees => getEntry("Employee"); 
-  Projects get projects => getEntry("Project"); 
+  Employees get employees => getEntry("Employee") as Employees;
+  Projects get projects => getEntry("Project") as Projects;
  
 } 
  
